@@ -53,4 +53,11 @@ steps:
 
     StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
 
+    ScriptType: Inline Script
+    InlineScript:
+      echo 'Add your inline script steps here'
 
+# django commands
+#ScriptType: Inline Script
+#InlineScript:
+#  python3.6 manage.py migrate
